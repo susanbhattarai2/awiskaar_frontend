@@ -1,0 +1,81 @@
+
+.ap__services-miniheader{
+    display: block;
+    font-size: 18px;
+    font-weight: 800;
+    font-family: var(--font-family);
+    color: var(--gradient-text);
+}
+.ap__services-header{
+    display: block;
+    font-size: 50px;
+    font-weight: 800;
+    font-family: var(--font-family);
+    color: var(--banner-text);
+    line-height: 2;
+    justify-content: center;
+}
+.ap__services-text{
+    display: flex;
+    font-size: 18px;
+    font-family: var(--font-family);
+    color: var(--banner-text);
+    width: 50%;
+}
+.ap__service-card{
+    display: flex;
+    flex-direction: row;
+    margin-top: 2rem;
+}
+.ap__service-card-content{
+    
+    flex-direction: column;
+    flex: 1;
+    padding: 2rem;
+    margin:1rem;
+    margin-left: 0px;
+    background: var(--card-color);
+    box-shadow: 0px 0px 5px rgba(0,0, 0,0.2);
+    align-items: left;
+    border-radius: 10px;
+    
+}
+.ap__service-card-content-title {
+    margin-top: 1rem;
+    font-family: var(--font-family);
+    font-weight:800;
+    font-size: 20px;
+    color: var(--banner-text);
+}
+.ap__service-card-content-text{
+    margin-top: 1rem;
+    font-family: var(--font-family);
+    font-size: 18px;
+    color: var(--banner-text);
+    font-weight: 100;
+}
+.ap__service-card-content-knowmore{
+    margin-top: 1rem;
+}
+.ap__service-card-content-knowmore a{
+    
+    font-family: var(--font-family);
+    text-decoration: none;
+    color: #f56506;
+
+}
+@media screen and (max-width:1050px){
+    .ap__services{
+        flex-direction: column;
+        margin: 0 0 3rem;
+    }
+
+}
+@media screen and (max-width:650px) {
+    .ap__service-card{
+        display: block;
+    }
+    .ap__service-card-content{
+        display: block;
+    }
+}

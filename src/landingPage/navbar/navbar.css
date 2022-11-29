@@ -1,0 +1,98 @@
+.ap__navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0.5rem 6rem;
+}
+.ap__navbar-logo{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.ap__navbar-logo img{
+    height: 75px;
+    width: 150px;
+}
+.ap__navbar-links{
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row;
+    
+}
+.ap__navbar-links-container{
+    display: flex;
+    flex-direction: row;
+    
+    
+}
+.ap__navbar-links a{
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    text-transform: capitalize;
+    cursor: pointer;
+    margin: 0 1rem;
+    color: white;
+    text-decoration: none;
+    
+}
+.ap__navbar-menu-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    
+    text-align: end;
+    background: var(--color-footer);
+    padding: 2rem;
+    position: absolute;
+    right: 0;
+    top: 40px;
+    margin-top: 1rem;
+    min-width: 210px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0,0, 0,0.2);
+}
+
+.ap__navbar-menu-container p {
+    margin: 1rem 0;
+
+}
+.ap__navbar-menu-container-links a{
+    color:#fff;
+    text-decoration: none;
+    text-align: center;
+    margin-right:2rem;
+}
+
+
+@media screen and (max-width: 1050px) {
+    .ap__navbar-links {
+        display: none;
+    }
+
+    .ap__navbar-menu {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .ap__navbar {
+        padding: 2rem 4rem;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .ap__navbar {
+        padding: 2rem;
+    }
+
+    .ap__navbar-menu-container {
+        top: 20px;
+    }
+
+    
+}

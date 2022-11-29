@@ -1,0 +1,29 @@
+.ap__projects{
+       align-items: flex-start
+}
+.ap__projects-card{
+    display: flex;
+    flex-direction: row;
+}
+.ap__projects-header{
+    font-size: 50px;
+    font-weight: 800;
+    font-family: var(--font-family);
+    color: var(--banner-text);
+    line-height: 2;
+    text-align: center;
+    justify-content: center;
+}
+.ap__projects-card-content{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 1rem;
+    
+    }
+.ap__projects-card-content img{
+    height: 600px;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: #FF6600 0px 28px 60px;
+}

@@ -1,0 +1,7 @@
+export {default as Banner} from './banner/Banner'
+export {default as Navbar} from './navbar/Navbar'
+export {default as About} from './about/About'
+export {default as Services} from './services/Services'
+export {default as Projects} from './projects/Projects'
+export {default as Footer} from './footer/Footer'
+export {default as Contact} from '../contact/contact'

@@ -1,0 +1,123 @@
+.ap__banner {
+    display: flex;
+    flex-direction: row;
+}
+
+.ap__banner-content {
+    flex: 1;
+    display: flex;
+    justify-content:center;
+    align-items: flex-start;
+    flex-direction: column;
+    color: var(--gradient-text);
+    margin-right: 5rem;
+}
+
+.ap__banner-content h1 {
+    font-family: var(--font-family);
+    font-weight: 800;
+    font-size: 60px;
+    line-height: 75px;
+    letter-spacing: -0.04em;
+}
+
+.ap__banner-content p {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: var(--banner-text);
+
+    margin-top: 1.5rem;
+}
+
+.ap__banner-content-button {
+    width: auto;
+    margin: 2rem 0 1rem;
+
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+.ap__banner-content-button button {
+    
+    width: auto;
+    min-height: 50px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    background: transparent;
+    border: 2px solid #FF4820;
+    padding: 10px 15px;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.ap__banner-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ap__banner-image img {
+    width: 100%;
+    height: 100%;
+}
+@media screen and (max-width: 1050px) {
+    .ap__banner {
+        flex-direction: column;
+    }
+
+    .ap__banner-content {
+        margin: 0 0 3rem;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .ap__banner-content h1 {
+        font-size: 48px;
+        line-height: 60px;
+    }
+
+    .ap__banner-content p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    
+    
+
+
+    
+    .ap__banner-content-button {
+        font-size: 16px;
+        line-height: 24px;
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .ap__banner-content h1 {
+        font-size: 36px;
+        line-height: 48px;
+    }
+
+    .ap__banner-content p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .ap__banner-content-button {
+        font-size: 12px;
+        line-height: 16px;
+        width: auto;
+    }
+
+}
