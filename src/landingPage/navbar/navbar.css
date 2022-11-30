@@ -39,6 +39,10 @@
     text-decoration: none;
     
 }
+.ap__navbar-menu{
+    display: none;
+    position: relative;
+}
 .ap__navbar-menu-container {
     display: flex;
     justify-content: flex-end;
@@ -59,10 +63,18 @@
 
 .ap__navbar-menu-container p {
     margin: 1rem 0;
-
+    
 }
-.ap__navbar-menu-container-links a{
-    color:#fff;
+
+.ap__navbar-menu-container a{
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color:var(--banner-text);
     text-decoration: none;
     text-align: center;
     margin-right:2rem;

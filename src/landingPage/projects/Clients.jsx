@@ -11,7 +11,7 @@ import client8 from '../../assets/client8.png';
 import './clients.css'
 const Clients = ()=> {
   return (
-    <div className='ap__projects section__padding' id='projects'>
+    <div className='ap__projects section__padding' id='clients'>
       <div className='ap__projects-header'>Our Clients</div>
         <div className='ap__projects-card'>
           <div className='ap__projects-card-content  '>

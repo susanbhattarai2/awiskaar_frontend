@@ -6,10 +6,11 @@ import logo from '../../assets/logo.png';
 const Navbar = () => {
   const Menu = ()=> (
     <>
-      <p><a href='home'>Home</a></p>
-      <p><a href='about'>About</a></p>
-      <p><a href='services'>Services</a></p>
-      <p><a href= 'contact'>Contact</a></p>
+      <p><a href='#home'>Home</a></p>
+      <p><a href='#about'>About</a></p>
+      <p><a href='#services'>Services</a></p>
+      <p><a href='#clients'>Clients</a></p>
+      <p><a href= '#contact'>Contact</a></p>
       <p><a href='#Career'>Career</a></p>
     </>
   )
