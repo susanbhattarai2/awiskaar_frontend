@@ -13,7 +13,7 @@ const Banner = () => (
       </div>
     </div>
 
-    <div className="ap__banner-image">
+    <div className="ap__banner-image vibrate-1">
       <img src={ai} alt='ai' />
     </div>
   </div>

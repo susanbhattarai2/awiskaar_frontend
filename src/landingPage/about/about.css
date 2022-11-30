@@ -69,3 +69,37 @@
     font-family: var(--font-family);
     color: var(--banner-text);
 }
+@media screen and (max-width:1050px){
+    .ap__about{
+        flex-direction: column;
+        margin: 0 0 3rem;
+    }
+
+}
+@media screen and (max-width:650px) {
+    .ap__about{
+        display: block;
+    }
+.ap__about-section-miniheader{
+    margin-top: 2rem;
+}
+    .ap__about-section-header{
+    line-height: 1;
+    margin-top: 1rem;    
+    }
+    .ap__about-section-content{
+        margin-top: 1rem;
+    }
+    .ap__about-section-card{
+        flex-direction: column;
+    }
+}    
+@media screen and (max-width: 550px) {
+    .ap__about {
+        flex-direction: column;
+    }
+
+   
+
+    
+}

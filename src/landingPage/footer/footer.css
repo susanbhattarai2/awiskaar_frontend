@@ -14,6 +14,14 @@
     padding-left: 1rem ;
     padding-right: 1rem;
 }
+
+.ap__footer-section h2{
+    font-family: var(--font-family);
+    color: var(--banner-text);
+    padding-inline:1rem;
+
+}
+
 .ap__footer-section-logo img{
     height: 150px;
     width: 300px;
@@ -26,6 +34,8 @@
 }
 .ap__footer-section-links{
    align-items: center;
+   padding-inline: 1rem;
+   margin-inline:1rem;
    
 }
 .ap__footer-section-links a{
@@ -33,9 +43,9 @@
     font-family: var(--font-family);
     color: var(--banner-text);
     font-size: 18px;
-    padding: 0.2rem;
+    padding: 0.5rem;
     display: block;
-    text-align: center;
+    /* text-align: center; */
 }
 
 .ap__footer-section-title {
@@ -49,13 +59,14 @@
 .ap__footer-section-address{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding-bottom: 2 rem;
+    /* align-items: center; */
+    padding-block: 2rem;
     
 }
 .ap__footer-section-address-content{
     display: flex;
     align-items: center;
+    margin-block: 10px;
 }
 .ap__footer-section-adress-icon{
     display: flex;

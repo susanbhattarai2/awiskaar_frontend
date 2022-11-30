@@ -16,7 +16,7 @@ const About = () => {
    // onMouseLeave={() => setAboutShadow("#")}
   return (
     
-      <div className='ap__about section__padding'>
+      <div className='ap__about section__padding' id='about'>
         <div className='ap__about-image'>
           <img src={about} alt='about'/>
         </div>

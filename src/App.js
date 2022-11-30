@@ -1,4 +1,5 @@
-import { Banner,Navbar,About,Services,Projects,Footer } from './landingPage';
+import { Banner,Navbar,About,Services,Clients,Footer,Contact } from './landingPage';
+//import contact from './contact/contact'
 import './App.css';
 
 const App = () => (
@@ -6,15 +7,17 @@ const App = () => (
 
     <div >
         <div className="App">
-        <div className="gradient__bg">
-            <Navbar />
-            <Banner />
+            <div className="gradient__bg">
+                <Navbar />
+                <Banner />
+            </div>
+            <div><About /></div>
+            <div><Services /></div>
+            <div><Clients /></div>
+            <div><Contact /></div>
+            <div><Footer /></div>
         </div>
-        <div><About /></div>
-        <div><Services /></div>
-        <div><Projects /></div>
-        <div><Footer /></div>
-        </div>
+       
     </div>
     
 

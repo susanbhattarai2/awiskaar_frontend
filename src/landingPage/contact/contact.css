@@ -1,0 +1,104 @@
+.ap__contact{
+display: flex;
+flex-direction:row  
+}
+.ap__contact-container{
+    display: flex;
+    flex-direction: column;
+}
+.ap__contact-miniheader{
+    font-family: var(--font-family);
+    font-size: 18px;
+    font-weight: 800;
+    
+}
+.ap__contact-header{
+    font-size: 50px;
+    font-weight: 800;
+    font-family: var(--font-family);
+    color: var(--banner-text);
+    line-height: 2;
+    justify-content: center;
+}
+.ap__contact-text{
+    font-family: var(--font-family);
+    font-size: 18px;
+    color: var(--banner-text);
+}
+.ap__contact-address{
+    margin-top: 2rem;
+    margin-right: 4rem;
+}
+.ap__contact-address-container-card{
+    display: flex;
+    
+    padding: 1rem;
+    margin:1rem;
+   
+    align-items: center;
+}
+.ap__contact-address-container-card-icon{    
+    padding-right:0.5rem ;
+}
+
+.ap__contact-address-container-card-text{
+    padding-left: 0.5rem;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: var(--font-family);
+    color: var(--banner-text);
+}
+.ap__contact-form{
+    font-family: var(--font-family);
+    color: var(--banner-text);
+    background-color: var(--color-bg);
+    margin-top: 2rem;
+    margin-left: 4 rem;
+    width: 100%;
+    
+}
+.ap__contact-form-input{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+
+    
+}
+.ap__contact-form-input input{
+    margin-top: 1rem;
+    background-color: var(--card-color);
+    padding: 1rem 1rem;
+   
+    font-size: 14px;
+    color: var(--banner-text);
+}
+.ap__contact-form-input textarea{
+    margin-top: 1rem;
+    background-color: var(--card-color);
+    padding: 1rem 1rem;
+    
+    font-size: 14px;
+    color: var(--banner-text);
+}
+.ap__contact-form-input input::placeholder{
+    color: var(--banner-text);
+}
+.ap__contact-form-input textarea::placeholder{
+    color: var(--banner-text);
+}
+.ap__contact-form-input button{
+    font-family: var(--font-family);
+    color: black;
+    font-size: 14px;
+    font-weight: 800;
+    border-radius: 10px;
+    max-width: 15rem;
+    margin-top: 1rem;
+    background-color: var(--color-blog);
+    padding: 1rem 1rem;
+    
+}
+
+.ap__contact-form-body{
+    display: flex;
+}
