@@ -13,7 +13,7 @@ const App = () => {
                 spinner.style.display ='none';
                 setloading(false);
 
-            },500);
+            },2000);
         };
     
     return (

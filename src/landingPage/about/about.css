@@ -9,8 +9,9 @@
     display: flex;
     flex: 1;
     align-items: flex-end;
+    position: relative;
 }
-/*.ap__about-image::before{
+.ap__about-image::before{
     content: '';
     background: url('../../assets/about1.png'  ) repeat;
     height: 150px;
@@ -23,7 +24,25 @@
     -webkit-transform: translate(-15px,-30px);
     transform: translate(-15px,-30px);
     color: white;
-}*/
+}
+.ap__about-image::after{
+    content: '';
+border: 5px solid;
+  border-image-slice: 100%;
+  border-image-source: none;
+-webkit-border-image-source: -webkit-linear-gradient(145deg,#ff5100,#f98570);
+border-image-source: linear-gradient(145deg,#ff5100,#f98570);
+border-image-slice: 1;
+height: 90%;
+width: 70%;
+display: block;
+position: absolute;
+bottom: 0;
+left: 0;
+-webkit-transform: translate(-5px,20px);
+transform: translate(-5px,20px);
+z-index: -1;
+}
 .ap__about-section{
     display: flex;
     flex: 1;

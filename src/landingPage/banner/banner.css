@@ -39,7 +39,10 @@
     flex-direction: row;
 }
 
-
+.ap__banner-content-button a{
+    text-decoration: none;
+    color: var(--banner-text);
+}
 
 
 .ap__banner-content-button button {

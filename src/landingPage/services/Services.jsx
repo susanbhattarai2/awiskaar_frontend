@@ -23,8 +23,7 @@ const Services=()=> {
                     Software Development
                 </div>
                 <div className='ap__service-card-content-text'>
-                We specialize in web app design and development. 
-                From designing to full fledged software products irrespective of language and frameworks. 
+                Get a software that is both robust and user-friendly and that solves your business problems. 
                 </div>
                 <div className='ap__service-card-content-knowmore'>
                 <a href='#knowmore'>Know more </a>
@@ -39,7 +38,7 @@ const Services=()=> {
                     App Developmet
                 </div>
                 <div className='ap__service-card-content-text'>
-                Our awesome phone app developers specialize in Flutter and Swift to turn your idea into the next big thing.
+                Create high-performance iOS and Android mobile applications at a low cost.
                 </div>
                 <div className='ap__service-card-content-knowmore'>
                 <a href='#knowmore'>Know more </a>
@@ -53,8 +52,8 @@ const Services=()=> {
                     Web Development
                 </div>
                 <div className='ap__service-card-content-text'>
-                We specialize in web app design and development. 
-                From designing to full fledged software products irrespective of language and frameworks.
+                Create a powerful custom web application or web portal based on your specifications.
+                Create a one-of-a-kind, responsive website to boost your global presence.
                 </div>
                 <div className='ap__service-card-content-knowmore'>
                 <a href='#knowmore'>Know more </a>
@@ -71,7 +70,8 @@ const Services=()=> {
                     Digital Marketing
                 </div>
                 <div className='ap__service-card-content-text'>
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
+                Connect your brand with consumers at the right time. 
+                Strategies that raise awareness, leads, and revenue in a cost-effective and scalable manner.
                 </div>
                 <div className='ap__service-card-content-knowmore'>
                 <a href='#knowmore'>Know more </a>
@@ -85,7 +85,7 @@ const Services=()=> {
                     IT Consulting
                 </div>
                 <div className='ap__service-card-content-text'>
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
+                We advise businesses by assisting them in optimizing their IT infrastructure in order to achieve their business objectives.
                 </div>
                 <div className='ap__service-card-content-knowmore'>
                 <a href='#knowmore'>Know more </a>
@@ -99,7 +99,8 @@ const Services=()=> {
                     Cloud Solution
                 </div>
                 <div className='ap__service-card-content-text'>
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
+                Our cloud solutions enable businesses to scale, remain flexible, 
+                and focus on business operations rather than complex IT infrastructure management.
                 </div>
                 <div className='ap__service-card-content-knowmore'>
                 <a href='#knowmore'>Know more </a>
