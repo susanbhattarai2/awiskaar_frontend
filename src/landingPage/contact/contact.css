@@ -15,7 +15,7 @@ flex-direction:row
 .ap__contact-header{
     font-size: 50px;
     font-weight: 800;
-    font-family: var(--font-family);
+    font-family: var(--banner-font);
     color: var(--banner-text);
     line-height: 2;
     justify-content: center;

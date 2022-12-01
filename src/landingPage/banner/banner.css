@@ -14,11 +14,11 @@
 }
 
 .ap__banner-content h1 {
-    font-family: var(--font-family);
+    font-family: var(--banner-font);
     font-weight: 800;
     font-size: 60px;
     line-height: 75px;
-    letter-spacing: -0.04em;
+    letter-spacing: -0.04rem;
 }
 
 .ap__banner-content p {

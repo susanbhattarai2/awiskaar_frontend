@@ -3,14 +3,14 @@
     display: block;
     font-size: 18px;
     font-weight: 800;
-    font-family: var(--font-family);
+    font-family: var(--banner-font);
     color: var(--gradient-text);
 }
 .ap__services-header{
     display: block;
     font-size: 50px;
     font-weight: 800;
-    font-family: var(--font-family);
+    font-family: var(--banner-font);
     color: var(--banner-text);
     line-height: 2;
     justify-content: center;
@@ -49,14 +49,14 @@
 }
 .ap__service-card-content-title {
     margin-top: 1rem;
-    font-family: var(--font-family);
+    font-family: var(--banner-font);
     font-weight:800;
-    font-size: 20px;
+    font-size: 30px;
     color: var(--banner-text);
 }
 .ap__service-card-content-text{
     margin-top: 1rem;
-    font-family: var(--font-family);
+    font-family: var(--banner-font);
     font-size: 18px;
     color: var(--banner-text);
     font-weight: 100;
