@@ -1,7 +1,7 @@
 .ap__footer {
      
     /* background-color: var(--color-footer); */
-    background-color: #1f0101;
+    background-color: var(gradient__bg);
     
 }
 .ap__footer-content{

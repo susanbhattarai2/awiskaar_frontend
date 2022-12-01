@@ -8,7 +8,7 @@ const Footer = () => {
         return currentYear;
     };
     return (
-        <div className='ap__footer '>
+        <div className='ap__footer gradient__bg'>
             <div className='ap__footer-content section__padding'>
                 <div className='ap__footer-section'>
                     <div className='ap__footer-section-logo'>
