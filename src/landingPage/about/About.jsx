@@ -22,7 +22,7 @@ const About = () => {
           <img src={about} alt='about'/>
         </div>
         <div className='ap__about-section'>
-          <div className='ap__about-section-miniheader gradient__text'>Our Achivement</div>
+          <div className='ap__about-section-miniheader gradient__text'>Our Achivements</div>
           <div className='ap__about-section-header'>Stuff About Us</div>
           <div className='ap__about-section-content'>Awiskaar Solutions is a rapidly growing company in the valley. We offer every Service imaginable  in the feild of technology. As a secondary feature, we provide all types of web development, web design, graphics design, IT counseling, and real estate services.</div>
           <div className='ap__about-section-card'>

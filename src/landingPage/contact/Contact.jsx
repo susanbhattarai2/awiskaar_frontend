@@ -27,7 +27,7 @@ const Contact = () => {
                                     <RiMapPinLine color='#fff' size={40} />
                                 </div>
                                 <div className='ap__contact-address-container-card-text'>
-                                    Kumaripati,Kathmandu
+                                    Kumaripati, Kathmandu
                                 </div>
                             </div>
                             <div className='ap__contact-address-container-card '>
@@ -43,7 +43,7 @@ const Contact = () => {
                                     <RiPhoneLine color='#fff' size={40} />
                                 </div>
                                 <div className='ap__contact-address-container-card-text'>
-                                    9801718290,9801140595
+                                    9801718290, 9801140595
                                 </div>
                             </div>
                         </div>

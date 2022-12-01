@@ -54,7 +54,7 @@ flex-direction:row
     background-color: var(--color-bg);
     margin-top: 2rem;
     margin-left: 4rem;
-    width: 100%;
+    width: 50%;
     
 }
 .ap__contact-form-input{
@@ -84,16 +84,27 @@ flex-direction:row
 .ap__contact-form-input textarea::placeholder{
     color: var(--banner-text);
 }
-.ap__contact-form-input button{
-    font-family: var(--font-family);
-    color: black;
-    font-size: 14px;
-    font-weight: 800;
-    border-radius: 10px;
+.ap__contact-form-input button{    
     max-width: 15rem;
     margin-top: 1rem;
-    background-color: var(--color-blog);
-    padding: 1rem 1rem;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 20px;
+    background: transparent;
+    border: 2px solid #ff6600;
+    padding: 10px;
+    color: white ;
+    cursor: pointer;
+    border-radius: 5px;
+    
+}
+
+.ap__contact-form-input button:hover{
+    background: #ff492091;
+    border: 2px solid #FF4820;
+    padding: 10px 15px;
+    color: #fff;
+    border-radius: 10px;
     
 }
 

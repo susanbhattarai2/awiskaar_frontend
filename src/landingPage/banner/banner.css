@@ -41,23 +41,25 @@
 
 
 
+
 .ap__banner-content-button button {
-    
-    width: auto;
-    min-height: 50px;
     font-family: var(--font-family);
     font-weight: 400;
     font-size: 20px;
-    line-height: 28px;
     background: transparent;
+    border: 2px solid #ff6600;
+    padding: 10px 15px;
+    color: white ;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.ap__banner-content-button button:hover {
+    background: #ff492091;
     border: 2px solid #FF4820;
     padding: 10px 15px;
     color: #fff;
-    cursor: pointer;
-    outline: none;
-
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
+    border-radius: 10px;
 }
 
 .ap__banner-image {

@@ -6,12 +6,12 @@ import logo from '../../assets/logo.png';
 const Navbar = () => {
   const Menu = ()=> (
     <>
-      <p><a href='#home'>Home</a></p>
+      <p><a href='#'>Home</a></p>
       <p><a href='#about'>About</a></p>
       <p><a href='#services'>Services</a></p>
       <p><a href='#clients'>Clients</a></p>
       <p><a href= '#contact'>Contact</a></p>
-      <p><a href='#Career'>Career</a></p>
+      {/* <p><a href='#Career'>Career</a></p> */}
     </>
   )
   const [toggleMenu,setToggleMenu] = useState(false);
@@ -19,7 +19,7 @@ const Navbar = () => {
   return (
     <div className='ap__navbar'>
         <div className='ap__navbar-logo'>
-                <img src={logo} alt='logo'/>
+              <a href='#'><img src={logo} alt='logo'/></a>
             </div>
         <div className='ap__navbar-links'>            
                 < Menu />

@@ -5,8 +5,8 @@ import client2 from '../../assets/client2.png';
 import client3 from '../../assets/client7.png';
 import client4 from '../../assets/client6.png';
 import client5 from '../../assets/client5.png';
-import client6 from '../../assets/client4.png';
-import client7 from '../../assets/client3.png';
+import client6 from '../../assets/client3.png';
+import client7 from '../../assets/client4.png';
 import client8 from '../../assets/client8.png';
 import './clients.css'
 const Clients = ()=> {
