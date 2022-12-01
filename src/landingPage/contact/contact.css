@@ -53,16 +53,14 @@ flex-direction:row
     color: var(--banner-text);
     background-color: var(--color-bg);
     margin-top: 2rem;
-    margin-left: 4 rem;
+    margin-left: 4rem;
     width: 100%;
     
 }
 .ap__contact-form-input{
     display: flex;
     flex-direction: column;
-    padding: 1rem;
-
-    
+    padding: 1rem;    
 }
 .ap__contact-form-input input{
     margin-top: 1rem;

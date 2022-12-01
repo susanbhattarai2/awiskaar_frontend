@@ -1,6 +1,7 @@
 import React from 'react'
 import './about.css'
 import about from '../../assets/about.jpg';
+
 import {RiTeamFill,RiComputerFill,RiCentosFill,RiHandCoinFill} from 'react-icons/ri';
 const About = () => {
  // const [ishover,setIsHover] = useState(false);

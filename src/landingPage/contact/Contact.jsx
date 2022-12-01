@@ -57,7 +57,7 @@ const Contact = () => {
                             
                             <input type='text' name='subject' placeholder='Subject' required />
                             
-                            <textarea name='message' colrows='4' placeholder='Message' required />
+                            <textarea name='message' rows='6' col='3' placeholder='Message' required />
                             <button type='submit' value='submit'>Submit</button>
                         </form>
                     </div>

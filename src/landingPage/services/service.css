@@ -38,7 +38,14 @@
     box-shadow: 0px 0px 5px rgba(0,0, 0,0.2);
     align-items: left;
     border-radius: 10px;
-    
+  
+}
+  
+.ap__service-card-content:hover{
+    background: var(--hover-color);
+    -webkit-animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+ 
 }
 .ap__service-card-content-title {
     margin-top: 1rem;
@@ -56,12 +63,15 @@
 }
 .ap__service-card-content-knowmore{
     margin-top: 1rem;
+    
 }
 .ap__service-card-content-knowmore a{
     
     font-family: var(--font-family);
     text-decoration: none;
     color: #f56506;
+    cursor: pointer;
+    
 
 }
 @media screen and (max-width:1050px){
