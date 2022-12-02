@@ -8,10 +8,7 @@ const Services=()=> {
         <div className='ap__services-miniheader gradient__text'> We work for your best experience</div>
         <div className='ap__services-header'>Our Services</div>
         <div className='ap__services-text'> 
-            We provide best ever services for your great experience. 
-            We make all efforts for the revolutionary change. 
-            We appreciate our employees to create future. 
-            We promise you that you will never get disappointed.
+            We provide best ever services for your great experience and for the revolutionary change. We appreciate our employees to create future and promise you that you will never get disappointed.
         </div>
         <div className='ap__service-card'>
        
@@ -26,7 +23,7 @@ const Services=()=> {
                 Get a software that is both robust and user-friendly and that solves your business problems. 
                 </div>
                 <div className='ap__service-card-content-knowmore'>
-                <a href='#knowmore'>Know more </a>
+                {/* <a href='#knowmore'>Know more </a> */}
                 </div>
             </div>
             <div className='ap__service-card-content'>
@@ -41,7 +38,7 @@ const Services=()=> {
                 Create high-performance iOS and Android mobile applications at a low cost.
                 </div>
                 <div className='ap__service-card-content-knowmore'>
-                <a href='#knowmore'>Know more </a>
+                 {/* <a href='#knowmore'>Know more </a> */}
                 </div>
             </div>
             <div className='ap__service-card-content'>
@@ -52,11 +49,10 @@ const Services=()=> {
                     Web Development
                 </div>
                 <div className='ap__service-card-content-text'>
-                Create a powerful custom web application or web portal based on your specifications.
-                Create a one-of-a-kind, responsive website to boost your global presence.
+                Create a powerful custom web application or web portal based on your specifications to boost your global presence.
                 </div>
                 <div className='ap__service-card-content-knowmore'>
-                <a href='#knowmore'>Know more </a>
+                 {/* <a href='#knowmore'>Know more </a> */}
                 </div>
             </div>
            
@@ -74,7 +70,7 @@ const Services=()=> {
                 Strategies that raise awareness, leads, and revenue in a cost-effective and scalable manner.
                 </div>
                 <div className='ap__service-card-content-knowmore'>
-                <a href='#knowmore'>Know more </a>
+                 {/* <a href='#knowmore'>Know more </a> */}
                 </div>
             </div>
             <div className='ap__service-card-content'>
@@ -88,7 +84,7 @@ const Services=()=> {
                 We advise businesses by assisting them in optimizing their IT infrastructure in order to achieve their business objectives.
                 </div>
                 <div className='ap__service-card-content-knowmore'>
-                <a href='#knowmore'>Know more </a>
+                 {/* <a href='#knowmore'>Know more </a> */}
                 </div>
             </div>
             <div className='ap__service-card-content'>
@@ -103,7 +99,7 @@ const Services=()=> {
                 and focus on business operations rather than complex IT infrastructure management.
                 </div>
                 <div className='ap__service-card-content-knowmore'>
-                <a href='#knowmore'>Know more </a>
+                 {/* <a href='#knowmore'>Know more </a> */}
                 </div>
             </div>
             

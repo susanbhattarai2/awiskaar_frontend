@@ -1,6 +1,6 @@
 import React from 'react'
 import './banner.css'
-import ai from '../../assets/aii.png';
+import ai from '../../assets/aiii.png';
 const Banner = () => (
   
   <div className="ap__banner section__padding scale-up-center" id="home">

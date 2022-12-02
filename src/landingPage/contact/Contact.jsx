@@ -27,6 +27,35 @@ const Contact = () => {
         .then(res=>{
             console.log(res.data)
         })
+        var name = document.getElementById('name');
+        var email = document.getElementById('email');
+        var subject = document.getElementById('subject');
+        var message = document.getElementById('message');
+        const messageBox = document.getElementById('messageBox');
+        const success = document.getElementById('success');
+        const danger = document.getElementById('danger');
+
+        if (name.value === '' || email.value === '' || subject.value === '' || message.value === ''){
+            messageBox.style.display='block';
+            danger.style.display = 'block';
+        }
+        else{
+            setTimeout(() => {
+                name.value = '';
+                email.value = '';
+                subject.value = '';
+                message.value = '';
+
+            }, 2000);
+            messageBox.style.display='block';
+            success.style.display = 'block';
+        }
+
+        setTimeout(() => {
+            success.style.display = 'none';
+            danger.style.display = 'none';
+            messageBox.style.display='none';            
+        }, 10000);
     }
     
     return (
@@ -78,7 +107,16 @@ const Contact = () => {
                             <input onChange={(e)=>handle(e)} type='text' id='subject' name='subject' value={data.subject} placeholder='Subject' required />
                              
                             <textarea onChange={(e)=>handle(e)} id='message' name='message' value={data.message} rows='6' col='3' placeholder='Message' required />
+                            <div className='messageBox' id='messageBox'>
+                                <div className="success" id="success">
+                                    Form Sent Successfully!!
+                                </div>
+                                <div className="danger" id="danger">
+                                    Fields cannot be empty.
+                                </div>
+                            </div>
                             <button >Submit</button>
+                            
                         </form>
                     </div>
                 </div>
