@@ -1,14 +1,34 @@
-import React from 'react'
+import React,{useState} from 'react'
 import './contact.css'
-import { RiMapPinLine, RiMailLine, RiPhoneLine } from 'react-icons/ri'
+import { RiMapPinLine, RiMailLine, RiPhoneLine } from 'react-icons/ri';
+import Axios from 'axios';
 const Contact = () => {
-    //const [form,setForm]=useState({
-    //   fname:'',
-    // email:'',
-    // subject:'',
-    //  message:''
-    // });
-
+    const url='https://awiskar.pythonanywhere.com/api/v1/core/contact_request/'
+    const [data,setData]=useState({
+        name:'',
+        email:'',
+        subject:'',
+        message:''
+    });
+    function handle(e){
+        const newdata ={...data}
+        newdata[e.target.id] = e.target.value
+        setData(newdata)
+        console.log(newdata) 
+    }
+    function submit(e){
+        e.preventDefault();
+        Axios.post(url,{
+            name:data.name,
+            email:data.email,
+            subject:data.subject,
+            message:data.message
+        })
+        .then(res=>{
+            console.log(res.data)
+        })
+    }
+    
     return (
         <div className='ap__contact section__padding' id='contact'>
             <div className='ap__contact-container'>
@@ -49,16 +69,16 @@ const Contact = () => {
                         </div>
                     </div>
                     <div className='ap__contact-form'>
-                        <form className='ap__contact-form-input' method='POST' action='#'>
+                        <form className='ap__contact-form-input' onSubmit={(e)=>submit(e)}>
                             
-                            <input type='text' name='name' placeholder='Name' required />
+                            <input onChange={(e)=>handle(e)} type='text' id='name' name='name' value={data.name} placeholder='Full Name' required />
                             
-                            <input type='email' name='email' placeholder='Email' required />
+                            <input onChange={(e)=>handle(e)} type='email' id='email' name='email' value={data.email} placeholder='Email' required />
                             
-                            <input type='text' name='subject' placeholder='Subject' required />
-                            
-                            <textarea name='message' rows='6' col='3' placeholder='Message' required />
-                            <button type='submit' value='submit'>Submit</button>
+                            <input onChange={(e)=>handle(e)} type='text' id='subject' name='subject' value={data.subject} placeholder='Subject' required />
+                             
+                            <textarea onChange={(e)=>handle(e)} id='message' name='message' value={data.message} rows='6' col='3' placeholder='Message' required />
+                            <button >Submit</button>
                         </form>
                     </div>
                 </div>
