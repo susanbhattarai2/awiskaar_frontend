@@ -20,13 +20,7 @@ const Clients = () => {
     
   },[]);
 
-  const [show,setShow] = useState({
-         uuid:'',name:'',desc:'',web_url:'',client_type:''
-      })
-  const showDetail = (uuid) =>
-    {Axios.get('https://awiskar.pythonanywhere.com/api/v1/core/clients/')
-      .then(res=>setShow(res))
-    }
+  
 
 
 
@@ -44,14 +38,14 @@ const Clients = () => {
     <>
     
       {modal && (
-        <div className="modal" onClick={toggleModal} key={clients.uuid}>
+        <div className="modal" onClick={toggleModal} >
           <div onClick={toggleModal} className="overlay"></div>
           <div className="modal-content ">
             <div className='ap__modal-card-content'>
-              <img src={clients.image} alt='client1' />
+              <img src={client1} alt='client1' />
             </div>
             <h2>
-              {show.image}
+              Khumbu Esport
             </h2>
             <a href='https://www.facebook.com/khumbuesports' className='modal_url'> https://www.facebook.com/khumbuesports </a>
             <p className='modal_desc'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi, quas! Sequi illo quo quisquam similique non, officiis repellat inventore. Tempore, quos reprehenderit obcaecati omnis at ratione!</p>
