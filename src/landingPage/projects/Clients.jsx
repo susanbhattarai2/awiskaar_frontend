@@ -13,14 +13,20 @@ import client8 from '../../assets/client8.png';
 import './clients.css'
 //const url ="https://awiskar.pythonanywhere.com/api/v1/core/clients/"
 const Clients = () => {
-  //const [data,setData]=useState([]);
+  const [clients,setClients]=useState([]);
   useEffect(()=>{
     Axios.get('https://awiskar.pythonanywhere.com/api/v1/core/clients/')
-    .then(res=>console.log(res.data))
+    .then(res=>setClients(res.data))
     
-  }
-  )
+  },[]);
 
+  const [show,setShow] = useState({
+         uuid:'',name:'',desc:'',web_url:'',client_type:''
+      })
+  const showDetail = (uuid) =>
+    {Axios.get('https://awiskar.pythonanywhere.com/api/v1/core/clients/')
+      .then(res=>setShow(res))
+    }
 
 
 
@@ -38,14 +44,14 @@ const Clients = () => {
     <>
     
       {modal && (
-        <div className="modal" onClick={toggleModal}>
+        <div className="modal" onClick={toggleModal} key={clients.uuid}>
           <div onClick={toggleModal} className="overlay"></div>
           <div className="modal-content ">
             <div className='ap__modal-card-content'>
-              <img src={client1} alt='client1' />
+              <img src={clients.image} alt='client1' />
             </div>
             <h2>
-              Khumbu Esport
+              {show.image}
             </h2>
             <a href='https://www.facebook.com/khumbuesports' className='modal_url'> https://www.facebook.com/khumbuesports </a>
             <p className='modal_desc'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi, quas! Sequi illo quo quisquam similique non, officiis repellat inventore. Tempore, quos reprehenderit obcaecati omnis at ratione!</p>
@@ -55,35 +61,20 @@ const Clients = () => {
           </div>
         </div>
       )}
-      <div className='ap__projects ap__client_section_padding' id='clients'>
+      
+      <div className='ap__projects ap__client_section_padding' >
         <div className='ap__projects-header'>Our Clients</div>
         <div className='ap__projects-card'>
-          <div className='ap__projects-card-content' onClick={toggleModal}>
-            <img src={client1} alt='client1' />
+        {clients.map((client)=>{
+          const {image}=client
+          return(
+          <div className='ap__projects-card-content' onClick={toggleModal}  >
+            <img src={image} alt='client1' />
           </div>
-          <div className='ap__projects-card-content  '>
-            <img src={client2} alt='client2' />
-          </div>
-          <div className='ap__projects-card-content  '>
-            <img src={client3} alt='client3' />
-          </div>
+          )
+        })
+      }
           
-          <div className='ap__projects-card-content  '>
-            <img src={client4} alt='client4' />
-          </div>
-          
-          <div className='ap__projects-card-content  '>
-            <img src={client5} alt='client5' />
-          </div>
-          <div className='ap__projects-card-content  '>
-            <img src={client6} alt='client6' />
-          </div>
-          <div className='ap__projects-card-content  '>
-            <img src={client8} alt='client8' />
-          </div>
-          <div className='ap__projects-card-content  '>
-            <img src={client7} alt='client7' />
-          </div>
         </div>
       </div>
     </>
