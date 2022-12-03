@@ -1,5 +1,6 @@
-import React, { useState } from 'react'
+import React, { useState,useEffect } from 'react'
 import { RiCloseFill } from 'react-icons/ri'
+import axios from 'axios';
 //import project1 from '../../assets/project1.png';
 import client1 from '../../assets/client1.png';
 import client2 from '../../assets/client2.png';
@@ -10,7 +11,19 @@ import client6 from '../../assets/client3.png';
 import client7 from '../../assets/client4.png';
 import client8 from '../../assets/client8.png';
 import './clients.css'
+
 const Clients = () => {
+  //const [data,setData]=useState([]);
+  useEffect(()=>{
+    axios.get('https://awiskar.pythonanywhere.com/api/v1/core/clients/')
+    .then(res=>console.log(res.data))
+    
+  }
+  )
+
+
+
+
   const [modal, setModal] = useState(false);
   const toggleModal = () => {
     setModal(!modal);
@@ -23,6 +36,7 @@ const Clients = () => {
 
   return (
     <>
+    
       {modal && (
         <div className="modal" onClick={toggleModal}>
           <div onClick={toggleModal} className="overlay"></div>
