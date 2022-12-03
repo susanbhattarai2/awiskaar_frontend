@@ -6,7 +6,7 @@
 }
 
 .ap__about-image{
-    display: flex;
+    
     flex: 1;
     align-items: flex-end;
     position: relative;
@@ -119,16 +119,22 @@ z-index: -1;
     }
 .ap__about-section-miniheader{
     margin-top: 2rem;
+    font-size: 14px;
 }
     .ap__about-section-header{
     line-height: 1;
-    margin-top: 1rem;    
+    margin-top: 1rem; 
+    font-size: 36px;   
     }
     .ap__about-section-content{
         margin-top: 1rem;
+        font-size: 14px;
     }
     .ap__about-section-card{
         flex-direction: column;
+    }
+    .ap__about-section-card-content-text{
+        font-size: 14px;
     }
 }    
 @media screen and (max-width: 550px) {

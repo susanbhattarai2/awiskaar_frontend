@@ -88,7 +88,16 @@
 
     .ap__navbar-menu {
         display: flex;
+        z-index: 99;
     }
+    .ap__banner-image{
+        display: none;
+    }
+    .ap__about-image{
+        display: none;
+    }
+    
+
 }
 
 @media screen and (max-width: 700px) {

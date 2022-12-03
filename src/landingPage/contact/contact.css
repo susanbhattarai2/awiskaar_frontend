@@ -52,9 +52,10 @@ flex-direction:row
     font-family: var(--font-family);
     color: var(--banner-text);
     background-color: var(--color-bg);
-    margin-top: 2rem;
+    width: 100%;
+    /* margin-top: 2rem;
     margin-left: 4rem;
-    width: 50%;
+    width: 50%; */
     
 }
 .ap__contact-form-input{
@@ -110,7 +111,9 @@ flex-direction:row
 
 .ap__contact-form-body{
     display: flex;
+    justify-content: space-around;
 }
+
 
 
 /* Form Messages */
@@ -156,4 +159,58 @@ flex-direction:row
     100%{
         transform: scale(1);
     }
+}
+@media screen and (max-width:1050px){
+    .ap__contact{
+        flex-direction: column;
+        margin: 0 0 3rem;
+    }
+
+}
+@media screen and (max-width:650px) {
+    .ap__contact{
+        display: block;
+    }
+.ap__contact--miniheader{
+    margin-top: 2rem;
+    font-size: 14px;
+}
+    .ap__contact-header{
+    line-height: 2;
+    margin-top: 1rem;  
+    font-size: 36px;  
+    }
+    .ap__contact-content{
+        margin-top: 1rem;
+    }
+    .ap__contact-text{
+        font-size: 14px;
+    }
+    .ap__contact-card{
+        flex-direction: column;
+    }
+    
+.ap__contact-address-container-card-text{
+    font-size: 14px;
+}
+}    
+@media screen and (max-width: 550px) {
+    .ap__contact {
+        flex-direction: column;
+        
+    }
+
+    .ap__contact-form{
+        font-family: var(--font-family);
+        color: var(--banner-text);
+        background-color: var(--color-bg);
+       
+        
+    }
+    .ap__contact-form-body {
+       flex-direction: column;
+    }
+   
+
+    
 }
