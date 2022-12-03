@@ -14,6 +14,15 @@ import './clients.css'
 //const url ="https://awiskar.pythonanywhere.com/api/v1/core/clients/"
 const Clients = () => {
   const [clients,setClients]=useState([]);
+  
+  const [rs,setrs] = useState([])
+
+const showDetail = (uuid) =>
+    {
+       
+      Axios.get(`https://awiskar.pythonanywhere.com/api/v1/core/clients/${uuid}`)
+      .then(res=>setrs(res.data))
+    }
   useEffect(()=>{
     Axios.get('https://awiskar.pythonanywhere.com/api/v1/core/clients/')
     .then(res=>setClients(res.data))
@@ -42,13 +51,13 @@ const Clients = () => {
           <div onClick={toggleModal} className="overlay"></div>
           <div className="modal-content ">
             <div className='ap__modal-card-content'>
-              <img src={client1} alt='client1' />
+              <img src={rs.image} alt='client1' />
             </div>
             <h2>
-              Khumbu Esport
+              {rs.name}
             </h2>
-            <a href='https://www.facebook.com/khumbuesports' className='modal_url'> https://www.facebook.com/khumbuesports </a>
-            <p className='modal_desc'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi, quas! Sequi illo quo quisquam similique non, officiis repellat inventore. Tempore, quos reprehenderit obcaecati omnis at ratione!</p>
+            <a href={rs.web_url} className='modal_url'>URL: {rs.web_url} </a>
+            <p className='modal_desc'>{rs.desc}</p>
             <button className="close-modal" onClick={toggleModal}>
               <RiCloseFill size={26} />
             </button>
@@ -59,15 +68,15 @@ const Clients = () => {
       <div className='ap__projects ap__client_section_padding' >
         <div className='ap__projects-header'>Our Clients</div>
         <div className='ap__projects-card'>
-        {clients.map((client)=>{
-          const {image}=client
-          return(
-          <div className='ap__projects-card-content' onClick={toggleModal}  >
-            <img src={image} alt='client1' />
+        {clients.map((names,index)=>
+          
+          <div className='ap__projects-card-content' onClick={()=>showDetail(names.uuid)} key={index} >
+            <img src={names.image} alt='client1' onClick={toggleModal}/>
+            
           </div>
           )
-        })
-      }
+        }
+      
           
         </div>
       </div>
