@@ -63,15 +63,19 @@
 
 }
 @media screen and (max-width:650px) {
-    .ap__service-card{
-        display: block;
+    .ap__projects-card{
+        display: flex;
+        flex-direction: column;
+        
     }
-    .ap__service-card-content{
-        display: block;
+    .ap__projects-card-content{
+        height: 300px;
+        width: 300px;
     }
     .ap__projects-header {
         font-size: 36px;
     }
+    
 }
 
 
