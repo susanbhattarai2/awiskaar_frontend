@@ -4,6 +4,9 @@
     background-color: var(gradient__bg);
     
 }
+.ap__footer-section-logo{
+    text-align: center;
+}
 .ap__footer-content{
     display: flex;
     align-items: center;
@@ -87,6 +90,7 @@
     background-color: var(--color-secondaryfooter);
     align-items: center;
     flex-direction: row;
+    border-top: 1px white solid;
 }
 .ap__secondary-footer-content{    
     display: flex;

@@ -20,7 +20,7 @@ const App = () => {
         !loading && (
         <div >
             <div className="App">
-                <div className="gradient__bg">
+                <div className="gradient__bg hero_container">
                     <Navbar />
                     <Banner />
                 </div>

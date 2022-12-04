@@ -68,13 +68,13 @@ const Footer = () => {
             <div className='ap__secondary-footer'>
                 <div className='ap__secondary-footer-content'>
                     <div className='ap__secondary-footer-copyright'>
-                        Copyright &copy; {getYear()}. Awiskaar Solutions
+                        Copyright &copy; {getYear()}. Awiskaar Solutions Pvt. Ltd.
                     </div>
                     <div className='ap__secondary-footer-social'>
-                        <a href='#facebook'><RiFacebookCircleFill size={22} color='white' /></a>
-                        <a href='#instagram'><RiInstagramFill size={22} color='white' /></a>
-                        <a href='#Linkdein'><RiLinkedinBoxFill size={22} color='white' /></a>
-                        <a href='#twitter'><RiTwitterFill size={22} color='white' /></a>
+                        <a href='https://www.facebook.com/Awiskaar/' target="_blank"><RiFacebookCircleFill size={22} color='white' /></a>
+                        <a href='https://www.instagram.com/awiskaarsolutions/' target="_blank"><RiInstagramFill size={22} color='white' /></a>
+                        <a href='https://www.linkedin.com/company/awiskaar-solutions/' target="_blank"><RiLinkedinBoxFill size={22} color='white' /></a>
+                        {/* <a href='#twitter'><RiTwitterFill size={22} color='white' /></a> */}
                     </div>
                 </div>
             </div>

@@ -5,7 +5,7 @@ const Banner = () => (
   
   <div className="ap__banner section__padding scale-up-center" id="home">
     <div className="ap__banner-content">
-      <h1 className='gradient__text'>Let&apos;s Build Something amazing with Awiskaar </h1>
+      <h1 className='gradient__text'>Let&apos;s Build Something Amazing with Awiskaar </h1>
       <p>Awiskaar Solutions is one of the fast emerging company in the valley. We provides every possible services related to the Technology field.</p>
 
       <div className="ap__banner-content-button">

@@ -110,8 +110,8 @@
 
 @media screen and (max-width: 490px) {
     .ap__banner-content h1 {
-        font-size: 36px;
-        line-height: 48px;
+        font-size: 25px;
+        line-height: 30px;
     }
 
     .ap__banner-content p {

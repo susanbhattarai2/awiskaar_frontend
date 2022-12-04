@@ -1,19 +1,28 @@
-.ap__about{
+.ap__about {
     color: var(--banner-text);
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-.ap__about-image{
-    
+@media screen and (min-width:1050px) {
+    .ap__about {
+        margin-block: 2rem;
+    }
+
+}
+
+
+.ap__about-image {
+
     flex: 1;
     align-items: flex-end;
     position: relative;
 }
-.ap__about-image::before{
+
+.ap__about-image::before {
     content: '';
-    background: url('../../assets/about1.png'  ) repeat;
+    background: url('../../assets/about1.png') repeat;
     height: 150px;
     width: 150px;
     display: block;
@@ -21,37 +30,40 @@
     top: 0;
     left: 0;
     z-index: -1;
-    -webkit-transform: translate(-15px,-30px);
-    transform: translate(-15px,-30px);
+    -webkit-transform: translate(-15px, -30px);
+    transform: translate(-15px, -30px);
     color: white;
 }
-.ap__about-image::after{
+
+.ap__about-image::after {
     content: '';
-border: 5px solid;
-  border-image-slice: 100%;
-  border-image-source: none;
--webkit-border-image-source: -webkit-linear-gradient(145deg,#ff5100,#f98570);
-border-image-source: linear-gradient(145deg,#ff5100,#f98570);
-border-image-slice: 1;
-height: 90%;
-width: 70%;
-display: block;
-position: absolute;
-bottom: 0;
-left: 0;
--webkit-transform: translate(-5px,20px);
-transform: translate(-5px,20px);
-z-index: -1;
+    border: 5px solid;
+    border-image-slice: 100%;
+    border-image-source: none;
+    -webkit-border-image-source: -webkit-linear-gradient(145deg, #ff5100, #f98570);
+    border-image-source: linear-gradient(145deg, #ff5100, #f98570);
+    border-image-slice: 1;
+    height: 90%;
+    width: 70%;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    -webkit-transform: translate(-5px, 20px);
+    transform: translate(-5px, 20px);
+    z-index: -1;
 }
-.ap__about-section{
+
+.ap__about-section {
     display: flex;
     flex: 1;
-    justify-content:center;
+    justify-content: center;
     flex-direction: column;
     font-size: 18px;
     font-weight: var(--font-family);
 }
-.ap__about-section-miniheader{
+
+.ap__about-section-miniheader {
     display: flex;
     font-size: 18px;
     font-weight: 800;
@@ -59,7 +71,8 @@ z-index: -1;
     color: var(--gradient-text);
 
 }
-.ap__about-section-header{
+
+.ap__about-section-header {
     display: flex;
     font-size: 50px;
     font-weight: 800;
@@ -67,38 +80,44 @@ z-index: -1;
     color: var(--banner-text);
     line-height: 2;
 }
-.ap__about-section-content{
+
+.ap__about-section-content {
     display: flex;
     font-size: 18px;
     font-weight: 400;
     font-family: var(--font-family);
     color: var(--banner-text);
 }
-.ap__about-section-card{
+
+.ap__about-section-card {
     display: flex;
     flex-direction: row;
     cursor: pointer;
 }
-.ap__about-section-card-content:hover{
+
+.ap__about-section-card-content:hover {
     border-bottom: 2px solid var(--color-blog);
-    background: var(--hover-color );
+    background: var(--hover-color);
 }
-.ap__about-section-card-content{
+
+.ap__about-section-card-content {
     display: flex;
     flex: 1;
     padding: 1.5rem;
-    margin:1rem;
+    margin: 1rem;
     margin-left: 0px;
     background: var(--card-color);
-    box-shadow: 0px 0px 5px rgba(0,0, 0,0.2);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
     align-items: center;
     border-radius: 10px;
 }
-.ap__about-section-card-content-icon{
+
+.ap__about-section-card-content-icon {
     display: flex;
-    padding-right:0.5rem ;
+    padding-right: 0.5rem;
 }
-.ap__about-section-card-content-text{
+
+.ap__about-section-card-content-text {
     padding-left: 0.5rem;
     display: flex;
     font-size: 18px;
@@ -106,43 +125,51 @@ z-index: -1;
     font-family: var(--font-family);
     color: var(--banner-text);
 }
-@media screen and (max-width:1050px){
-    .ap__about{
+
+@media screen and (max-width:1050px) {
+    .ap__about {
         flex-direction: column;
         margin: 0 0 3rem;
     }
 
 }
+
 @media screen and (max-width:650px) {
-    .ap__about{
+    .ap__about {
         display: block;
     }
-.ap__about-section-miniheader{
-    margin-top: 2rem;
-    font-size: 14px;
-}
-    .ap__about-section-header{
-    line-height: 1;
-    margin-top: 1rem; 
-    font-size: 36px;   
+
+    .ap__about-section-miniheader {
+        margin-top: 2rem;
+        font-size: 14px;
     }
-    .ap__about-section-content{
+
+    .ap__about-section-header {
+        line-height: 1;
+        margin-top: 1rem;
+        font-size: 36px;
+    }
+
+    .ap__about-section-content {
         margin-top: 1rem;
         font-size: 14px;
     }
-    .ap__about-section-card{
+
+    .ap__about-section-card {
         flex-direction: column;
     }
-    .ap__about-section-card-content-text{
+
+    .ap__about-section-card-content-text {
         font-size: 14px;
     }
-}    
+}
+
 @media screen and (max-width: 550px) {
     .ap__about {
         flex-direction: column;
     }
 
-   
 
-    
+
+
 }
