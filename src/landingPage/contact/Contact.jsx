@@ -1,32 +1,42 @@
-import React,{useState} from 'react'
+import React, { useState } from 'react'
+import swal from 'sweetalert';
 import './contact.css'
 import { RiMapPinLine, RiMailLine, RiPhoneLine } from 'react-icons/ri';
 import Axios from 'axios';
+
 const Contact = () => {
-    const url='https://awiskar.pythonanywhere.com/api/v1/core/contact_request/'
-    const [data,setData]=useState({
-        name:'',
-        email:'',
-        subject:'',
-        message:''
+    const url = 'https://awiskar.pythonanywhere.com/api/v1/core/contact_request/'
+    const [data, setData] = useState({
+        name: '',
+        email: '',
+        subject: '',
+        message: ''
     });
-    function handle(e){
-        const newdata ={...data}
+    function handle(e) {
+        const newdata = { ...data }
         newdata[e.target.id] = e.target.value
         setData(newdata)
-        console.log(newdata) 
+        console.log(newdata)
     }
-    function submit(e){
+    function submit(e) {
         e.preventDefault();
-        Axios.post(url,{
-            name:data.name,
-            email:data.email,
-            subject:data.subject,
-            message:data.message
+        Axios.post(url, {
+            name: data.name,
+            email: data.email,
+            subject: data.subject,
+            message: data.message
         })
-        .then(res=>{
-            console.log(res.data)
-        })
+            .then(res => {
+                name.value = '';
+                email.value = '';
+                subject.value = '';
+                message.value = '';
+                swal({
+                    title: "Thank You!",
+                    text: "Message Sent Successfully !!",
+                    icon: "success",
+                });
+            })
         var name = document.getElementById('name');
         var email = document.getElementById('email');
         var subject = document.getElementById('subject');
@@ -35,29 +45,29 @@ const Contact = () => {
         const success = document.getElementById('success');
         const danger = document.getElementById('danger');
 
-        if (name.value === '' || email.value === '' || subject.value === '' || message.value === ''){
-            messageBox.style.display='block';
+        if (name.value === '' || email.value === '' || subject.value === '' || message.value === '') {
+            messageBox.style.display = 'block';
             danger.style.display = 'block';
         }
-        else{
-            setTimeout(() => {
-                name.value = '';
-                email.value = '';
-                subject.value = '';
-                message.value = '';
+        else {
+            // setTimeout(() => {
+            //     name.value = '';
+            //     email.value = '';
+            //     subject.value = '';
+            //     message.value = '';
 
-            }, 2000);
-            messageBox.style.display='block';
-            success.style.display = 'block';
+            // }, 2000);
+            // messageBox.style.display = 'block';
+            // success.style.display = 'block';
         }
 
         setTimeout(() => {
             success.style.display = 'none';
             danger.style.display = 'none';
-            messageBox.style.display='none';            
+            messageBox.style.display = 'none';
         }, 10000);
     }
-    
+
     return (
         <div className='ap__contact section__padding' id='contact'>
             <div className='ap__contact-container'>
@@ -98,25 +108,22 @@ const Contact = () => {
                         </div>
                     </div>
                     <div className='ap__contact-form'>
-                        <form className='ap__contact-form-input' onSubmit={(e)=>submit(e)}>
-                            
-                            <input onChange={(e)=>handle(e)} type='text' id='name' name='name' value={data.name} placeholder='Full Name' required />
-                            
-                            <input onChange={(e)=>handle(e)} type='email' id='email' name='email' value={data.email} placeholder='Email' required />
-                            
-                            <input onChange={(e)=>handle(e)} type='text' id='subject' name='subject' value={data.subject} placeholder='Subject' required />
-                             
-                            <textarea onChange={(e)=>handle(e)} id='message' name='message' value={data.message} rows='6' col='3' placeholder='Message' required />
+                        <form className='ap__contact-form-input' onSubmit={(e) => submit(e)}>
+
+                            <input onChange={(e) => handle(e)} type='text' id='name' name='name' value={data.name} placeholder='Full Name' required />
+
+                            <input onChange={(e) => handle(e)} type='email' id='email' name='email' value={data.email} placeholder='Email' required />
+
+                            <input onChange={(e) => handle(e)} type='text' id='subject' name='subject' value={data.subject} placeholder='Subject' required />
+
+                            <textarea onChange={(e) => handle(e)} id='message' name='message' value={data.message} rows='6' col='3' placeholder='Message' required />
                             <div className='messageBox' id='messageBox'>
-                                <div className="success" id="success">
-                                    Form Sent Successfully!!
-                                </div>
                                 <div className="danger" id="danger">
                                     Fields cannot be empty.
                                 </div>
                             </div>
-                            <button >Submit</button>
-                            
+                            <button>Submit</button>
+
                         </form>
                     </div>
                 </div>
