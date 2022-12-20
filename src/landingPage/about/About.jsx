@@ -2,7 +2,10 @@ import React from 'react'
 import './about.css'
 import about from '../../assets/about.jpg';
 
-import { RiTeamFill, RiComputerFill, RiCentosFill, RiHandCoinFill } from 'react-icons/ri';
+import { RiTeamFill, RiComputerLine, RiCentosFill, RiHandCoinFill,RiTimeLine } from 'react-icons/ri';
+import { HiOutlineClipboardCheck } from 'react-icons/hi';
+import {FaAward} from 'react-icons/fa';
+import {FcCustomerSupport,FcMultipleDevices,FcPortraitMode,FcBullish,FcApproval,FcPositiveDynamic,FcClock,FcHeadset} from 'react-icons/fc';
 const About = () => {
   // const [ishover,setIsHover] = useState(false);
 
@@ -23,24 +26,43 @@ const About = () => {
       </div>
       <div className='ap__about-section'>
         <div className='ap__about-section-miniheader gradient__text'>Our Achivements</div>
-        <div className='ap__about-section-header'>Stuff About Us</div>
+        <div className='ap__about-section-header'>Things about us</div>
         <div className='ap__about-section-content'>
-          <p>Awiskaar Solutions is a rapidly growing company in the valley. We offer every Service imaginable  in the feild of technology. As a secondary feature, we provide all types of web development, web design, graphics design, IT counseling, and real estate services.</p>
           <p>Awiskaar Solutions Pvt. Ltd. is a software firm and a digital solution partner that helps all different kinds of businesses create products or services that are based on digital platforms in order to elevate their visibility and brand value using cutting edge technology.</p>
+          
         </div>
-
+        
         <div className='ap__about-section-card'>
           <div className='ap__about-section-card-content '>
             <div className='ap__about-section-card-content-icon'>
-              <RiTeamFill color='#f56506' size={50} />
+              <FcApproval color='#f56506' size={50} />
             </div>
             <div className='ap__about-section-card-content-text'>
-              Leader in what we do
+              Result Oriented
             </div>
           </div>
           <div className='ap__about-section-card-content'>
             <div className='ap__about-section-card-content-icon'>
-              <RiComputerFill color='#21D4FD' size={50} />
+              <FcClock color='#21D4FD' size={50} />
+            </div>
+            <div className='ap__about-section-card-content-text'>
+              Delivery on Time
+            </div>
+          </div>
+
+        </div>
+        <div className='ap__about-section-card'>
+          <div className='ap__about-section-card-content '>
+            <div className='ap__about-section-card-content-icon'>
+              <FcPositiveDynamic color='#f56506' size={50} />
+            </div>
+            <div className='ap__about-section-card-content-text'>
+              Quality Driven
+            </div>
+          </div>
+          <div className='ap__about-section-card-content'>
+            <div className='ap__about-section-card-content-icon'>
+              <FcMultipleDevices color='#21D4FD' size={50} />
             </div>
             <div className='ap__about-section-card-content-text'>
               Technology Consultant
@@ -51,18 +73,18 @@ const About = () => {
         <div className='ap__about-section-card'>
           <div className='ap__about-section-card-content'>
             <div className='ap__about-section-card-content-icon'>
-              <RiCentosFill color='#7F00FF' size={50} />
+              <FcPortraitMode color='#7F00FF' size={50} />
             </div>
             <div className='ap__about-section-card-content-text'>
-              State of the Art Technology
+              Client Satisfaction
             </div>
           </div>
           <div className='ap__about-section-card-content'>
             <div className='ap__about-section-card-content-icon'>
-              <RiHandCoinFill color='#43e97b' size={50} />
+              <FcHeadset color='#43e97b' size={50} />
             </div>
             <div className='ap__about-section-card-content-text'>
-              Innovative
+            Strong Support
             </div>
           </div>
         </div>
