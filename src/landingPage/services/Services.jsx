@@ -1,12 +1,13 @@
 import React from 'react'
 import './service.css'
-import {RiCodeSSlashFill,RiComputerLine,RiSmartphoneLine,RiLineChartLine,RiFileCloudLine,RiTeamLine} from 'react-icons/ri';
+// import {RiCodeSSlashFill,RiComputerLine,RiSmartphoneLine,RiLineChartLine,RiFileCloudLine,RiTeamLine} from 'react-icons/ri';
+import {FcCommandLine,FcMultipleSmartphones,FcEngineering,FcSelfServiceKiosk,FcBullish,FcOrganization} from 'react-icons/fc'
 const Services=()=> {
     //const [slideUp,setSlideup] = useState(false);
   return (
     <div className='ap__services section__padding' id='services'>
         <div className='ap__services-miniheader gradient__text'> We work for your best experience</div>
-        <div className='ap__services-header'>Our Services</div>
+        <div className='ap__services-header'>What We Offer</div>
         <div className='ap__services-text'> 
             We provide best ever services for your great experience and for the revolutionary change. We appreciate our employees to create future and promise you that you will never get disappointed.
         </div>
@@ -14,10 +15,10 @@ const Services=()=> {
        
             <div className='ap__service-card-content'>
                 <div className='ap__services-card-content-icon'>
-                    <RiCodeSSlashFill color='#f56506' size={50}/>
+                    <FcCommandLine color='#f56506' size={50}/>
                 </div>
                 <div className='ap__service-card-content-title'>
-                    Software Development
+                Software Creation
                 </div>
                 <div className='ap__service-card-content-text'>
                 Get a software that is both robust and user-friendly and that solves your business problems. 
@@ -29,10 +30,10 @@ const Services=()=> {
             <div className='ap__service-card-content'>
                 <div className='ap__services-card-content-icon'>
 
-                    <RiSmartphoneLine color='#f56506' size={50}/>
+                    <FcMultipleSmartphones color='#f56506' size={50}/>
                 </div>
                 <div className='ap__service-card-content-title'>
-                    App Development
+                Mobile app Design & Development
                 </div>
                 <div className='ap__service-card-content-text'>
                 Create high-performance iOS and Android mobile applications at a low cost.
@@ -43,10 +44,10 @@ const Services=()=> {
             </div>
             <div className='ap__service-card-content'>
                 <div className='ap__service-card-content-icon'>
-                    <RiComputerLine color='#f56506' size={50}/>
+                    <FcSelfServiceKiosk color='#f56506' size={50}/>
                 </div>
                 <div className='ap__service-card-content-title'>
-                    Web Development
+                Website Design & Development
                 </div>
                 <div className='ap__service-card-content-text'>
                 Create a powerful custom web application or web portal based on your specifications to boost your global presence.
@@ -60,10 +61,10 @@ const Services=()=> {
         <div className='ap__service-card'>
             <div className='ap__service-card-content'>
                 <div className='ap__services-card-content-icon'>
-                    <RiLineChartLine color='#f56506' size={50}/>
+                    <FcBullish color='#f56506' size={50}/>
                 </div>
                 <div className='ap__service-card-content-title'>
-                    Digital Marketing
+                Content/Digital Marketing
                 </div>
                 <div className='ap__service-card-content-text'>
                 Connect your brand with consumers at the right time. 
@@ -75,10 +76,10 @@ const Services=()=> {
             </div>
             <div className='ap__service-card-content'>
                 <div className='ap__services-card-content-icon'>
-                    <RiTeamLine color='#f56506' size={50}/>
+                    <FcEngineering color='#f56506' size={50}/>
                 </div>
                 <div className='ap__service-card-content-title'>
-                    IT Consulting
+                Product Development & Design
                 </div>
                 <div className='ap__service-card-content-text'>
                 We advise businesses by assisting them in optimizing their IT infrastructure in order to achieve their business objectives.
@@ -89,10 +90,10 @@ const Services=()=> {
             </div>
             <div className='ap__service-card-content'>
                 <div className='ap__service-card-content-icon'>
-                    <RiFileCloudLine color='#f56506' size={50}/>
+                    <FcOrganization color='#f56506' size={50}/>
                 </div>
                 <div className='ap__service-card-content-title'>
-                    Cloud Solution
+                Development of bespoke enterprise solutions
                 </div>
                 <div className='ap__service-card-content-text'>
                 Our cloud solutions enable businesses to scale, remain flexible, 
