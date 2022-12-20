@@ -75,7 +75,7 @@
 .ap__about-section-header {
     display: flex;
     font-size: 50px;
-    font-weight: 800;
+    font-weight: 600;
     font-family: var(--font-family);
     color: var(--banner-text);
     line-height: 2;

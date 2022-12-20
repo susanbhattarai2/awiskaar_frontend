@@ -21,9 +21,9 @@ const Navbar = () => {
         <div className='ap__navbar-logo'>
               <a href='#'><img src={logo} alt='logo'/></a>
             </div>
-        <div className='ap__navbar-links'>            
+        {/* <div className='ap__navbar-links'>            
                 < Menu />
-        </div>
+        </div> */}
         <div className='ap__navbar-menu'>
           {toggleMenu
           ? <RiCloseLine  color='#fff' size={27} onClick={()=> setToggleMenu(false)}/> 

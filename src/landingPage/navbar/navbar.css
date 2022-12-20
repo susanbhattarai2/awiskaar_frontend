@@ -11,8 +11,8 @@
     align-items: center;
 }
 .ap__navbar-logo img{
-    height: 75px;
-    width: 150px;
+    height: 100px;
+    width: 200px;
 }
 .ap__navbar-links{
     flex: 1;
@@ -79,17 +79,17 @@
     text-align: center;
     margin-right:2rem;
 }
-
+.ap__navbar-menu {
+    display: flex;
+    z-index: 99;
+}
 
 @media screen and (max-width: 1050px) {
     .ap__navbar-links {
         display: none;
     }
 
-    .ap__navbar-menu {
-        display: flex;
-        z-index: 99;
-    }
+   
     .ap__banner-image{
         display: none;
     }
