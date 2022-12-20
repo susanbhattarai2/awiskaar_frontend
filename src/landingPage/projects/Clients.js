@@ -1,25 +1,25 @@
 import React, { useState, useEffect } from 'react'
-import { RiCloseFill } from 'react-icons/ri'
+// import { RiCloseFill } from 'react-icons/ri'
 import axios from 'axios';
-import { Spinner } from 'reactstrap';
+// import { Spinner } from 'reactstrap';
 
 import './clients.css'
 //const url ="https://awiskar.pythonanywhere.com/api/v1/core/clients/"
 const Clients = () => {
   const [clients, setClients] = useState([]);
 
-  const [rs, setrs] = useState({})
+  // const [rs, setrs] = useState({})
 
-  const [loading, setLoading] = useState(false);
+  // const [loading, setLoading] = useState(false);
 
   const showDetail = (uuid) => {
-    setrs({});
-    setLoading(true);
-    axios.get(`https://awiskar.pythonanywhere.com/api/v1/core/clients/${uuid}`)
-      .then(res => {
-        setrs(res.data)
-        setLoading(false);
-      })
+    // setrs({});
+    // setLoading(true);
+    // axios.get(`https://awiskar.pythonanywhere.com/api/v1/core/clients/${uuid}`)
+    //   .then(res => {
+    //     setrs(res.data)
+    //     // setLoading(false);
+    //   })
   }
   useEffect(() => {
     axios.get('https://awiskar.pythonanywhere.com/api/v1/core/clients/')
@@ -27,20 +27,20 @@ const Clients = () => {
   }, []);
 
 
-  const [modal, setModal] = useState(false);
-  const toggleModal = () => {
-    setModal(!modal);
-  }
-  if (modal) {
-    document.body.classList.add('active-modal')
-  } else {
-    document.body.classList.remove('active-modal')
-  }
+  // const [modal, setModal] = useState(false);
+  // const toggleModal = () => {
+  //   setModal(!modal);
+  // }
+  // if (modal) {
+  //   document.body.classList.add('active-modal')
+  // } else {
+  //   document.body.classList.remove('active-modal')
+  // }
 
   return (
     <>
 
-      {
+      {/* {
         modal ?
           (
             <div className="modal" onClick={toggleModal} >
@@ -49,7 +49,7 @@ const Clients = () => {
                 {
                   loading ?
                     <>
-                      <img src='loading1.png' width='250px' height='90px'/>
+                      <img src='loading1.png' width='250px' height='90px' />
                     </>
                     :
                     <>
@@ -71,7 +71,7 @@ const Clients = () => {
           )
           :
           null
-      }
+      } */}
 
       <div className='ap__projects ap__client_section_padding' >
         <div className='ap__projects-header'>Our Clients</div>
@@ -79,7 +79,9 @@ const Clients = () => {
           {clients.map((names, index) =>
 
             <div className='ap__projects-card-content' onClick={() => showDetail(names.uuid)} key={index} >
-              <img src={names.image} alt='client1' onClick={toggleModal} />
+              <a href={names.web_url} className='modal_url' target='_blank'>
+                <img src={names.image} alt='client1'/>
+              </a>
 
             </div>
           )
