@@ -84,6 +84,12 @@
     .ap__banner-content {
         margin: 0 0 3rem;
     }
+    .ap__banner-image{
+        display: none;
+    }
+    .ap__about-image{
+        display: none;
+    }
 }
 
 @media screen and (max-width: 650px) {

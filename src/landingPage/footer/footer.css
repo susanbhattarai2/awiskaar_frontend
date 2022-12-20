@@ -35,7 +35,9 @@
 .ap__footer-section-logo-text{
     font-family: var(--font-family);
     color: var(--banner-text);
-    font-size: 14px;
+    font-size: 15px;
+    /* text-transform: uppercase; */
+    font-weight: 600;
 }
 .ap__footer-section-links{
    align-items: center;

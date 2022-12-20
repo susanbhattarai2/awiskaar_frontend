@@ -26,7 +26,7 @@ const About = () => {
       </div>
       <div className='ap__about-section'>
         <div className='ap__about-section-miniheader gradient__text'>Our Achivements</div>
-        <div className='ap__about-section-header'>Things about us</div>
+        <div className='ap__about-section-header'>Things About Us</div>
         <div className='ap__about-section-content'>
           <p>Awiskaar Solutions Pvt. Ltd. is a software firm and a digital solution partner that helps all different kinds of businesses create products or services that are based on digital platforms in order to elevate their visibility and brand value using cutting edge technology.</p>
           

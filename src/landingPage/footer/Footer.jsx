@@ -10,14 +10,14 @@ const Footer = () => {
     return (
         <div className='ap__footer gradient__bg'>
             <div className='ap__footer-content section__padding'>
-                <div className='ap__footer-section'>
+                <div className='ap__footer-section '>
                     <div className='ap__footer-section-logo'>
                         < img src={logo} alt='footerlogo' />
+                        <p className='ap__footer-section-logo-text gradient__text'>
+                            INNOVATION, ITERATION and INVENTION
+                        </p>
                     </div>
-                    <div className='ap__footer-section-logo-text'>
-                        Established with the motive to solve various problems within a single hub.
 
-                    </div>
 
                 </div>
 
@@ -63,7 +63,7 @@ const Footer = () => {
                     </div>
                 </div>
 
-                
+
             </div>
             <div className='ap__secondary-footer'>
                 <div className='ap__secondary-footer-content'>
