@@ -82,11 +82,17 @@
 }
 
 .ap__about-section-content {
-    display: flex;
-    font-size: 18px;
+    /* display: flex; */
+    /* font-size: 18px; */
     font-weight: 400;
+
     font-family: var(--font-family);
     color: var(--banner-text);
+    padding-block: 10px;
+}
+
+.ap__about-section-content p:first-child {
+    margin-bottom: 10px;
 }
 
 .ap__about-section-card {

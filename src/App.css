@@ -222,6 +222,7 @@ body {
 
 
 @media screen and (max-width:1050px) {
+  
   .section__padding {
     padding: 4rem 6rem;
   }
@@ -233,7 +234,7 @@ body {
 
 @media screen and (max-width: 700px) {
   .section__padding {
-    padding: 4rem;
+    padding: 3rem;
   }
 
   .section__margin {
@@ -242,11 +243,15 @@ body {
 }
 
 @media screen and (max-width:540px) {
+  .hero_container{
+    height: auto;
+  }
+
   .section__padding {
-    padding: 4rem 2rem;
+    padding: 3rem 2rem;
   }
 
   .section__margin {
-    padding: 4rem 2rem;
+    padding: 3rem 2rem;
   }
 }

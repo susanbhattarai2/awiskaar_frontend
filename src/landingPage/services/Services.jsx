@@ -32,7 +32,7 @@ const Services=()=> {
                     <RiSmartphoneLine color='#f56506' size={50}/>
                 </div>
                 <div className='ap__service-card-content-title'>
-                    App Developmet
+                    App Development
                 </div>
                 <div className='ap__service-card-content-text'>
                 Create high-performance iOS and Android mobile applications at a low cost.

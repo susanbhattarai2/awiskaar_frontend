@@ -65,12 +65,14 @@
 @media screen and (max-width:650px) {
     .ap__projects-card{
         display: flex;
-        flex-direction: column;
+        /* flex-direction: column; */
+        flex-wrap: wrap;
         
     }
     .ap__projects-card-content{
-        height: 300px;
-        width: 300px;
+        /* height: 300px; */
+        /* width: 300px; */
+        width: 33%;
     }
     .ap__projects-header {
         font-size: 36px;
