@@ -13,20 +13,7 @@ const Services=()=> {
         </div>
         <div className='ap__service-card'>
        
-            <div className='ap__service-card-content'>
-                <div className='ap__services-card-content-icon'>
-                    <FcCommandLine color='#f56506' size={50}/>
-                </div>
-                <div className='ap__service-card-content-title'>
-                Software Creation
-                </div>
-                <div className='ap__service-card-content-text'>
-                Get a software that is both robust and user-friendly and that solves your business problems. 
-                </div>
-                <div className='ap__service-card-content-knowmore'>
-                {/* <a href='#knowmore'>Know more </a> */}
-                </div>
-            </div>
+            
             <div className='ap__service-card-content'>
                 <div className='ap__services-card-content-icon'>
 
@@ -56,9 +43,36 @@ const Services=()=> {
                  {/* <a href='#knowmore'>Know more </a> */}
                 </div>
             </div>
-           
+            <div className='ap__service-card-content'>
+                <div className='ap__services-card-content-icon'>
+                    <FcEngineering color='#f56506' size={50}/>
+                </div>
+                <div className='ap__service-card-content-title'>
+                Product Development & Design
+                </div>
+                <div className='ap__service-card-content-text'>
+                We advise businesses by assisting them in optimizing their IT infrastructure in order to achieve their business objectives.
+                </div>
+                <div className='ap__service-card-content-knowmore'>
+                 {/* <a href='#knowmore'>Know more </a> */}
+                </div>
+            </div>
         </div>
         <div className='ap__service-card'>
+        <div className='ap__service-card-content'>
+                <div className='ap__services-card-content-icon'>
+                    <FcCommandLine color='#f56506' size={50}/>
+                </div>
+                <div className='ap__service-card-content-title'>
+                Software Creation
+                </div>
+                <div className='ap__service-card-content-text'>
+                Get a software that is both robust and user-friendly and that solves your business problems. 
+                </div>
+                <div className='ap__service-card-content-knowmore'>
+                {/* <a href='#knowmore'>Know more </a> */}
+                </div>
+            </div>
             <div className='ap__service-card-content'>
                 <div className='ap__services-card-content-icon'>
                     <FcBullish color='#f56506' size={50}/>
@@ -74,20 +88,7 @@ const Services=()=> {
                  {/* <a href='#knowmore'>Know more </a> */}
                 </div>
             </div>
-            <div className='ap__service-card-content'>
-                <div className='ap__services-card-content-icon'>
-                    <FcEngineering color='#f56506' size={50}/>
-                </div>
-                <div className='ap__service-card-content-title'>
-                Product Development & Design
-                </div>
-                <div className='ap__service-card-content-text'>
-                We advise businesses by assisting them in optimizing their IT infrastructure in order to achieve their business objectives.
-                </div>
-                <div className='ap__service-card-content-knowmore'>
-                 {/* <a href='#knowmore'>Know more </a> */}
-                </div>
-            </div>
+           
             <div className='ap__service-card-content'>
                 <div className='ap__service-card-content-icon'>
                     <FcOrganization color='#f56506' size={50}/>

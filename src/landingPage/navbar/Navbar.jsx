@@ -59,20 +59,21 @@ function Navbar() {
       <div className='ap__navbar-logo'>
         <a href='#'><img src={logo} alt='logo' /></a>
       </div>
-      <nav ref={navRef}>
+      <nav ref={navRef} >
 
       <div className='ap__navbar-logo'>
         <a href='#'><img src={logo} alt='logo' /></a> 
       </div>
-        <a href="/#">Home</a>
-        <a href="/#">About</a>
-        <a href="/#">Services</a>
-        <a href="/#">Clients</a>
-        <a href="/#">Contact</a>
+        <a href="#">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#clients">Clients</a>
+        <a href="#contact">Contact</a>
 
         <button
           className="nav-btn nav-close-btn"
-          onClick={showNavbar}>
+          onClick={showNavbar}
+          >
           <RiCloseLine color='#fff' size={30} />
         </button>
       </nav>
