@@ -127,12 +127,19 @@
     flex-direction: column;
     }
     .ap__secondary-footer-content {
-        flex-direction: column;
+        flex-direction: column-reverse;
         padding-block: 10px;
+        padding-inline: 1px;
 
     }
 }    
 @media screen and (max-width: 550px) {
+    .ap__secondary-footer-content {
+        flex-direction: column-reverse;
+        font-size: 12px;
+        padding-block: 10px;
+        padding-inline: 1px;
 
+    }
 }
    

@@ -169,6 +169,7 @@ flex-direction:row
 @media screen and (max-width:650px) {
     .ap__contact{
         display: block;
+        margin:2px 0px;
     }
     .ap__contact--miniheader{
         margin-top: 2rem;
@@ -199,12 +200,12 @@ flex-direction:row
         font-size: 14px;
     }
 }    
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 540px) {
     .ap__contact {
         flex-direction: column;
-        
+        padding: 3rem 1.5rem;
     }
-
+    
     .ap__contact-form{
         font-family: var(--font-family);
         color: var(--banner-text);
