@@ -1,0 +1,35 @@
+.hero{
+    display:flex;
+    
+    height:100vh;
+    width: 100%;
+  }
+  .one{
+    background-image:url("../../assets/banner.jpg");
+    width: 100%;
+  }
+  .two{
+    background-color: black;
+    height:100vh;
+    z-index:1;
+    width:75%;
+    opacity:0.9;
+    position:absolute;
+    left:-150px;
+    transform-origin:top left;
+    transform:skewX(10deg) ;
+    height:100%;
+  }
+
+   @media screen and (max-width: 490px){
+    .one{
+      display: none;
+    } 
+    .two{
+      background: linear-gradient(90deg, #240900 1%, #000000 100%);
+      height: 100vh;
+      width: 100%;
+      left:0;
+      transform: none;
+    }
+   }
