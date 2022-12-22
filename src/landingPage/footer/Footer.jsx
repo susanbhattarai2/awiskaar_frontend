@@ -14,7 +14,7 @@ const Footer = () => {
                     <div className='ap__footer-section-logo'>
                         < img src={logo} alt='footerlogo' />
                         <p className='ap__footer-section-logo-text gradient__text'>
-                            INNOVATION, ITERATION and INVENTION
+                            INNOVATION, ITERATION & INVENTION
                         </p>
                     </div>
 
