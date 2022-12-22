@@ -140,7 +140,7 @@
 
 @media screen and (max-width: 550px) {
     .ap__navbar {
-        padding: 2rem;
+        padding: 0.5rem;
     }
 
     .ap__navbar-menu-container {
@@ -148,6 +148,13 @@
     }
     header nav{
         width: 100%;
+    }
+    .hero_container{
+        height: 70vh;
+    }
+
+    .ap__banner {
+        height: 100%;
     }
 
 

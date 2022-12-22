@@ -73,8 +73,8 @@ const Clients = () => {
           null
       } */}
 
-      <div className='ap__projects ap__client_section_padding' >
-        <div className='ap__projects-header'>Our Clients</div>
+      <div className='ap__projects ap__client_section_padding' id='clients'>
+        <div className='ap__projects-header' >Our Clients</div>
         <div className='ap__projects-card'>
           {clients.map((names, index) =>
 
