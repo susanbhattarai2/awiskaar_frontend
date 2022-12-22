@@ -12,7 +12,9 @@
     color: var(--gradient-text);
     margin-right: 5rem;
 }
-
+.myTypist{
+    color:white;
+}
 .ap__banner-content h1 {
     font-family: var(--banner-font);
     font-weight: 600;
