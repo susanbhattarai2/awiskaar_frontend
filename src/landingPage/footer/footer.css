@@ -39,7 +39,7 @@
     /* text-transform: uppercase; */
     font-weight: 600;
 }
-.ap__footer-section-links{
+/* .ap__footer-section-links{
    align-items: center;
    padding-inline: 1rem;
    margin-inline:1rem;
@@ -52,8 +52,8 @@
     font-size: 18px;
     padding: 0.5rem;
     display: block;
-    /* text-align: center; */
-}
+     text-align: center;
+} */
 
 .ap__footer-section-title {
     font-family: var(--font-family);

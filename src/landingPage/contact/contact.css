@@ -28,13 +28,12 @@ flex-direction:row
 .ap__contact-address{
     margin-top: 2rem;
     margin-right: 4rem;
+    width: 40%;
 }
 .ap__contact-address-container-card{
-    display: flex;
-    
-    padding: 1rem;
-    margin:1rem;
-   
+    display: flex;    
+    /* padding-block: 1rem; */
+    margin-block:1rem;
     align-items: center;
 }
 .ap__contact-address-container-card-icon{    
@@ -52,7 +51,7 @@ flex-direction:row
     font-family: var(--font-family);
     color: var(--banner-text);
     background-color: var(--color-bg);
-    width: 100%;
+    width: 60%;
     /* margin-top: 2rem;
     margin-left: 4rem;
     width: 50%; */
@@ -61,7 +60,7 @@ flex-direction:row
 .ap__contact-form-input{
     display: flex;
     flex-direction: column;
-    padding: 1rem;    
+    /* padding: 1rem;     */
 }
 .ap__contact-form-input input{
     margin-top: 1rem;
@@ -171,10 +170,10 @@ flex-direction:row
     .ap__contact{
         display: block;
     }
-.ap__contact--miniheader{
-    margin-top: 2rem;
-    font-size: 14px;
-}
+    .ap__contact--miniheader{
+        margin-top: 2rem;
+        font-size: 14px;
+    }
     .ap__contact-header{
     line-height: 2;
     margin-top: 1rem;  
@@ -189,10 +188,16 @@ flex-direction:row
     .ap__contact-card{
         flex-direction: column;
     }
+    .ap__contact-form{
+        width: 100%;
+    }
+    .ap__contact-address{
+        width: 100%;
+    }
     
-.ap__contact-address-container-card-text{
-    font-size: 14px;
-}
+    .ap__contact-address-container-card-text{
+        font-size: 14px;
+    }
 }    
 @media screen and (max-width: 550px) {
     .ap__contact {

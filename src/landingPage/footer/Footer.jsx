@@ -45,14 +45,14 @@ const Footer = () => {
                                 <RiPhoneFill color='white' size={22} />
                             </div>
                             <div className='ap__footer-section-address-icon-text'>
-                                9801718290,9801140595
+                                9801718290, 9801140595
                             </div>
                         </div>
                     </div>
 
                 </div>
 
-                <div className='ap__footer-section' >
+                {/* <div className='ap__footer-section' >
                     <h2>Useful Links</h2>
                     <div className='ap__footer-section-links'>
 
@@ -61,7 +61,7 @@ const Footer = () => {
                         <a href='#links'>Career</a>
                         <a href='#links'>Blog</a>
                     </div>
-                </div>
+                </div> */}
 
 
             </div>
