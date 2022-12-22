@@ -28,7 +28,7 @@ const App = () => {
                 <div><Services /></div>
                 <div><Clients /></div>
                 <div><Contact /></div>
-                <div><SplitImage/></div>
+                {/* <div><SplitImage/></div> */}
                 <div><Footer /></div>
             </div>
         

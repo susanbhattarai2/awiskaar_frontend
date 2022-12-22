@@ -73,6 +73,7 @@ const Footer = () => {
                     <div className='ap__secondary-footer-social'>
                         <a href='https://www.facebook.com/Awiskaar/' target="_blank"><RiFacebookCircleFill size={22} color='white' /></a>
                         <a href='https://www.instagram.com/awiskaarsolutions/' target="_blank"><RiInstagramFill size={22} color='white' /></a>
+                        <a href='https://twitter.com/awiskaar' target="_blank"><RiTwitterFill size={22} color='white' /></a>
                         <a href='https://www.linkedin.com/company/awiskaar-solutions/' target="_blank"><RiLinkedinBoxFill size={22} color='white' /></a>
                         {/* <a href='#twitter'><RiTwitterFill size={22} color='white' /></a> */}
                     </div>

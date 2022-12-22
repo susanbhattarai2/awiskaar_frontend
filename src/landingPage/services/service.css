@@ -23,19 +23,23 @@
 }
 .ap__service-card{
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
     margin-top: 2rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
 }
 .ap__service-card-content{
     /* flex-direction: column; */
-    flex: 1;
+    /* flex: 1; */
     padding: 1rem;
-    margin:10px;
-    margin-left: 0px;
+    margin-block:10px;
+    /* margin-left: 0px; */
     background: var(--card-color);
     box-shadow: 0px 0px 5px rgba(0,0, 0,0.2);
-    align-items: left;
+    /* align-items: left; */
     border-radius: 10px;
+    width: 32.5%;
   
 }
   
@@ -73,16 +77,33 @@
     
 
 }
-@media screen and (max-width:1050px){
-    
+
+
+@media screen and (min-width:576px) and (max-width:768px){
+    .ap__service-card-content{
+        display: block;
+        width: 46%;
+    }
+
 
 }
-@media screen and (max-width:650px) {
+
+/* @media screen and (min-width:768px) and (max-width:992px){
+    .ap__service-card-content{
+        display: block;
+        width: 100%;
+    }
+
+
+} */
+
+@media screen and (max-width:576px) {
     .ap__service-card{
         display: block;
     }
     .ap__service-card-content{
         display: block;
+        width: 100%;
     }
     .ap__services-miniheader {
         font-size: 14px;
