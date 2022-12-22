@@ -32,9 +32,7 @@ body {
   background: linear-gradient(90deg, #240900 1%, #000000 100%);
 
 }
-.hero_container{
-  height: 100vh;
-}
+
 
 .gradient__text {
   background: var(--gradient-text);
@@ -244,10 +242,7 @@ body {
 }
 
 @media screen and (max-width:540px) {
-  .hero_container{
-    height: auto;
-  }
-
+ 
   .section__padding {
     padding: 2rem;
   }
