@@ -123,7 +123,7 @@
     align-items: center;
     justify-content: space-between;
     height: 80px;
-    padding: 4rem 6rem;
+    padding: 4rem 3rem;
     background-color: transparent;
     /* background-color: var(--color-bg); */
     color: var(--banner-text);

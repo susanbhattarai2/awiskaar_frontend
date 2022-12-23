@@ -10,7 +10,7 @@
     align-items: flex-start;
     flex-direction: column;
     color: var(--gradient-text);
-    margin-right: 5rem;
+    margin-left: 3rem;
     z-index: 2;
 }
 .myTypist{
