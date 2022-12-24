@@ -1,6 +1,7 @@
 .ap__banner {
     display: flex;
     flex-direction: row;
+    display: none;
 }
 
 .ap__banner-content {
@@ -14,7 +15,7 @@
     z-index: 2;
 }
 .myTypist{
-    color:white;
+    color:var(--banner-text);
 }
 .ap__banner-content h1 {
     font-family: var(--banner-font);
@@ -96,6 +97,11 @@
 }
 
 @media screen and (max-width: 650px) {
+    .ap__banner {
+        display: flex;
+        flex-direction: row;
+        
+    }
     .ap__banner-content h1 {
         font-size: 48px;
         line-height: 60px;
@@ -119,12 +125,12 @@
 
 @media screen and (max-width: 490px) {
     .ap__banner-content h1 {
-        font-size: 25px;
+        font-size: 40px;
         line-height: 30px;
     }
 
     .ap__banner-content p {
-        font-size: 14px;
+        font-size: 18px;
         line-height: 24px;
     }
 

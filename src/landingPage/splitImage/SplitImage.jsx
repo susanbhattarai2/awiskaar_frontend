@@ -10,8 +10,8 @@ const SplitImage = () => {
 
 
         </div>
-        <div className="ap__banner split_image_content scale-up-center" id="home">
-          <div className="ap__banner-content">
+        <div className="split_image_content_container scale-up-center" id="home">
+          <div className="split_image_content">
             <h1 className='gradient__text'>Awiskaar Solutions </h1>
             {/* <p>Awiskaar Solutions is one of the fast emerging company in the valley. We provides every possible services related to the Technology field.</p> */}
             <p className='types'>We Believe in : <Typist className={'myTypist'} cursorClassName={'myCursor'} sentences={['Innovation.', 'Invention.', 'Iteration.']} loop />
