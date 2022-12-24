@@ -22,7 +22,7 @@ const App = () => {
                 <div className="App">
                     <div className="gradient__bg hero_container">
                         <Navbar />
-                        <SplitImage />
+                        {/* <SplitImage /> */}
                         <Banner />
                     </div>
                     <div><About /></div>

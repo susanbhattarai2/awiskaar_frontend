@@ -1,8 +1,12 @@
 .ap__banner {
     display: flex;
     flex-direction: row;
-    display: none;
+    /* display: none; */
 }
+.hero_container{
+    height: 100vh;
+}
+
 
 .ap__banner-content {
     flex: 1;

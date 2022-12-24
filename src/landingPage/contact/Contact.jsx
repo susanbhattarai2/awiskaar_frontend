@@ -86,7 +86,7 @@ const Contact = () => {
                                     <RiMapPinLine color='#fff' size={40} />
                                 </div>
                                 <div className='ap__contact-address-container-card-text'>
-                                    Kumaripati, Kathmandu
+                                    Kumaripati, Lalitpur
                                 </div>
                             </div>
                             <div className='ap__contact-address-container-card '>

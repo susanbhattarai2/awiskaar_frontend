@@ -1,6 +1,6 @@
 import React from 'react'
 import './banner.css'
-import ai from '../../assets/aiii.png';
+import ai from '../../assets/IT-Staffing.gif';
 import Typist from 'react-text-typist';
 const Banner = () => (
 
